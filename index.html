@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#sec ">About</a></li>
+      <li><a href="# ">Projects</a></li>
+      <li><a href="# ">⤓ CV</a></li>
+      <li><a href="# ">Contact</a></li>
+      <li><a type="button" class="btn-dark" onclick="cambiarModo()" href="# " >☾</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="./img/stars.png " id="stars" alt="">
+    <img src="./img/moon.png" id="moon" alt="">
+    <img src="./img/mountains_behind.png " id="mountains_behind" alt="">
+    <h2 id="text"> Frontend Developer</h2>
+    <a href="#sec" id="btn" >Explore</a>
+    <img src="./img/mountains_front.png " id="mountains_front" alt="">
+  </section>
+  <div class="sec" id="sec">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga eius non hic enim ducimus, vero animi, eveniet voluptas esse ratione inventore. Ut error cumque ab assumenda! Quas, excepturi facilis.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nihil ab fuga dignissimos, dolor voluptatibus tempore blanditiis minus, aliquid veniam optio non. Temporibus harum asperiores assumenda, esse porro reprehenderit dolorum?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit aliquid esse quo ratione, magnam, eveniet in, saepe doloremque quaerat reprehenderit aspernatur est fuga voluptates? Itaque blanditiis minus iusto iste!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas incidunt omnis eveniet exercitationem ipsum necessitatibus nemo minus illo doloribus porro, voluptatum quis reprehenderit ratione blanditiis dolores totam! Debitis, vitae?
+      <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolore nihil commodi quaerat consequatur ex doloremque cum dolores nostrum debitis? Consectetur repellat, eius ullam ipsum neque vitae dolore earum illo?lo
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veritatis iusto odio velit sequi accusamus nobis, magnam aliquid consequatur temporibus voluptatum nihil laudantium repellat id sunt eveniet facere voluptate voluptatem.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi quam molestias fugit totam officiis temporibus illum molestiae non illo aperiam asperiores impedit, id accusamus maiores corrupti fugiat recusandae excepturi!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat labore ut ab dolor laudantium enim non. Saepe blanditiis vitae suscipit perferendis repellat tenetur fuga a atque at. Labore, sed.
+    </p>
+  </div>
+  <div class="sec sec2" id="sec">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta consequuntur mollitia expedita quas iusto in, eius accusamus laudantium recusandae dolorem. Laboriosam deserunt ut, itaque quis odit dolorum praesentium incidunt?</p>
+    <div class="project1">
+    </div>
+    <div class="project1">
+    </div>
+
+  </div>
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    window.addEventListener('scroll',function(){
+      let value = window.scrollY;
+      stars.style.left=value * 0.25 +'px';
+      moon.style.top= value *1.05 +'px';
+    })
+    function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("oscuro"); 
+    } 
+  
+  </script>
+
+  
+</body>
+</html>
