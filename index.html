@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
@@ -12,7 +14,7 @@
     <ul>
       <li><a href="#" class="active">Home</a></li>
       <li><a href="#sec ">About</a></li>
-      <li><a href="# ">Projects</a></li>
+      <li><a href="#sec22 ">Projects</a></li>
       <li><a href="# ">⤓ CV</a></li>
       <li><a href="# ">Contact</a></li>
       <li><a type="button" class="btn-dark" onclick="cambiarModo()" href="# " >☾</a></li>
@@ -27,7 +29,7 @@
     <img src="./img/mountains_front.png " id="mountains_front" alt="">
   </section>
   <div class="sec" id="sec">
-    <h2>About</h2>
+    <h2 class="About">About</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga eius non hic enim ducimus, vero animi, eveniet voluptas esse ratione inventore. Ut error cumque ab assumenda! Quas, excepturi facilis.
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nihil ab fuga dignissimos, dolor voluptatibus tempore blanditiis minus, aliquid veniam optio non. Temporibus harum asperiores assumenda, esse porro reprehenderit dolorum?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit aliquid esse quo ratione, magnam, eveniet in, saepe doloremque quaerat reprehenderit aspernatur est fuga voluptates? Itaque blanditiis minus iusto iste!
@@ -38,16 +40,29 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat labore ut ab dolor laudantium enim non. Saepe blanditiis vitae suscipit perferendis repellat tenetur fuga a atque at. Labore, sed.
     </p>
   </div>
-  <div class="sec sec2" id="sec">
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta consequuntur mollitia expedita quas iusto in, eius accusamus laudantium recusandae dolorem. Laboriosam deserunt ut, itaque quis odit dolorum praesentium incidunt?</p>
-    <div class="project1">
+  <div class="container">
+    <img src="./img/317345511_152635547512782_820935826853081118_n.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
     </div>
-    <div class="project1">
+  </div>
+  <h2 id="sec22" class=" sec sec2 projects">My Projects</h2>
+    <div class="sec sec2" >
+        <div class="project1">
+          <img width="330px" height="230px" src="./img/317345511_152635547512782_820935826853081118_n.jpg" alt="img">
+        </div>
+
+        <div class="project1">
+          <img width="330px" height="230px"  src="./img/317345511_152635547512782_820935826853081118_n.jpg" alt="img">
+        </div>
+
+        <div class="project1">
+          <img width="330px" height="230px"  src="./img/317345511_152635547512782_820935826853081118_n.jpg" alt="img">
+        </div>  
     </div>
 
-  </div>
   <script>
+    /*crear un efecto de paralaje en una página web en respuesta al desplazamiento vertical del usuario.*/
     let stars = document.getElementById('stars');
     let moon = document.getElementById('moon');
     window.addEventListener('scroll',function(){
@@ -55,9 +70,12 @@
       stars.style.left=value * 0.25 +'px';
       moon.style.top= value *1.05 +'px';
     })
-    function cambiarModo() { 
-      var cuerpoweb = document.body; 
-      cuerpoweb.classList.toggle("oscuro"); 
+
+
+    function cambiarModo() { /*cambiar el modo visual de una página web.*/
+      var cuerpoweb = document.body; /*document.body se refiere al cuerpo principal de la página web. Esto se utiliza para acceder y modificar el contenido y el estilo de la página.*/
+      cuerpoweb.classList.toggle("oscuro");/*classList del elemento body. classList es una propiedad que proporciona acceso a las clases CSS de un elemento HTML.
+      toggle se utiliza para agregar o quitar una clase CSS de un elemento. */ 
     } 
   
   </script>
