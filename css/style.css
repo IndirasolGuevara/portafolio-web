@@ -81,6 +81,10 @@ section img{
   object-fit: cover;
   pointer-events: none;
 
+  display: block;
+  width: 100%;
+  height: auto;
+
 }
 
 section img#moon{
@@ -113,6 +117,7 @@ section img#mountains_front{
   position: relative;
   padding: 100px;
   background:#1c0522;
+  
 }
 
 .About{
@@ -128,6 +133,7 @@ section img#mountains_front{
 .sec p{
   font-size: 1.2em;
   color: #fff;
+
 }
 .oscuro{
    background: linear-gradient(#000000,#d8dff0);
@@ -144,18 +150,11 @@ section img#mountains_front{
 }
 .project1{
   position: relative;
-}
-.container {
-  position: relative;
-  width: 50%;
-  background-color: #1c0522;
+  
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+
+
 
 .overlay {
   position: absolute;
@@ -166,11 +165,12 @@ section img#mountains_front{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: .2s ease;
+  background-color: #412044;
 }
 
-.container:hover .overlay {
+
+.project1:hover .overlay {
   opacity: 1;
 }
 
@@ -185,5 +185,3 @@ section img#mountains_front{
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-
