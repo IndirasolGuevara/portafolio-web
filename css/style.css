@@ -117,13 +117,14 @@ section img#mountains_front{
   position: relative;
   padding: 100px;
   background:#1c0522;
-  
+  margin-top: -10px;
 }
 
 .About{
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
+  
 }
 .projects{
   font-size: 50px;
@@ -136,7 +137,7 @@ section img#mountains_front{
 
 }
 .oscuro{
-   background: linear-gradient(#000000,#d8dff0);
+  background: linear-gradient(#000000,#d8dff0);
 }
 .sec2 .project1{
   margin-left: 50px;
@@ -146,7 +147,7 @@ section img#mountains_front{
 .sec2{
   display: flex;
   justify-content: space-between;
-  
+  margin-top: -100px;
 }
 .project1{
   position: relative;
